@@ -1,17 +1,34 @@
 import React from "react";
-
+import { Button } from "reactstrap";
+import { useAuth0 } from "../react-auth0-spa";
 import logo from "../assets/logo.svg";
 
-const Hero = () => (
-  <div className="text-center hero my-5">
-    <img className="mb-3 app-logo" src={logo} alt="React logo" width="120" />
-    <h1 className="mb-4">React.js Sample Project</h1>
+const Hero = () => {
+  const { isAuthenticated, loginWithRedirect } = useAuth0();
 
-    <p className="lead">
-      This is a sample application that demonstrates an authentication flow for
-      an SPA, using <a href="https://reactjs.org">React.js</a>
-    </p>
-  </div>
-);
+  return (
+    <div className="text-center hero my-5">
+      <img className="mb-3 app-logo" src={logo} alt="React logo" width="120" />
+      <h1 className="mb-4">CartoHost Dashboard</h1>
+      {!isAuthenticated && (
+        <Button
+          id="qsLoginBtn"
+          color="primary"
+          className="btn-margin btn-block"
+          onClick={() => loginWithRedirect({})}
+        >
+          Log in
+        </Button>
+      )}
+
+      <hr />
+
+      <p className="lead">
+        Login or Signup to start using cartohost. For more information go to{" "}
+        <a href="http://cartohost.com">cartohost.com</a>
+      </p>
+    </div>
+  );
+};
 
 export default Hero;

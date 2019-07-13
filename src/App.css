@@ -29,3 +29,11 @@
   left: 0;
   right: 0;
 }
+
+.logo {
+  background-image: url("data:image/svg+xml,%3Csvg width='125.99999999999999' height='125.99999999999999' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --%3E%3Cg stroke='null'%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect x='-1' y='-1' width='128' height='128' id='canvas_background' fill='%23ffffff' stroke='null'/%3E%3Cg id='canvasGrid' display='none' stroke='null'%3E%3Crect id='svg_3' width='100%25' height='100%25' x='0' y='0' stroke-width='0' fill='url(%23gridpattern)'/%3E%3C/g%3E%3C/g%3E%3Cg stroke='null'%3E%3Ctitle%3ELayer 1%3C/title%3E%3Cellipse stroke='%2300007f' ry='58' rx='58' id='svg_6' cy='62.999999' cx='63.000001' fill-opacity='1' stroke-opacity='null' stroke-width='10' fill='%230fffff'/%3E%3Ctext fill='%23666666' stroke-width='0' x='45.664638' y='79.583258' id='svg_2' font-size='48' font-family='Arvo, sans-serif' text-anchor='start' xml:space='preserve' font-weight='bold' stroke='%237f7f7f'%3EC%3C/text%3E%3C/g%3E%3C/svg%3E");
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
