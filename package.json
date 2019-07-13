@@ -2,11 +2,14 @@
   "name": "auth0-react-01-login",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://app.cartohost.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.0.2",
@@ -14,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "highlight.js": "^9.15.6",
     "morgan": "^1.9.1",
     "react": "^16.8.6",
