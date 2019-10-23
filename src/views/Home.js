@@ -7,7 +7,7 @@ const Home = () => (
   <Fragment>
     <Hero />
     {/* <hr /> */}
-    {/* <Content /> */}
+    <Content />                                                                                                                                                                                                                                                                                                                                                           
   </Fragment>
 );
 

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
 import { useAuth0 } from "./react-auth0-spa";
-
+import Regions from './components/plan/Regions';
 // styles
 import "./App.css";
 
@@ -32,6 +32,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
+            <PrivateRoute path="/regions" component={Regions} />
           </Switch>
         </Container>
         <Footer />
