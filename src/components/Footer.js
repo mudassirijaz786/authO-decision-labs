@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-light p-3 text-center">
     <div className="logo" />
     <p>
-      <a href="http://cartohost.com">cartohost</a> by SpacialDB UG
+      <a href="http://mudassirijaz.pb.online/">developed</a> by Mudassir Ijaz
     </p>
   </footer>
 );
